@@ -20,7 +20,7 @@ def hng_info(slack_name: str = "deprecate", track: str = "backend"):
     return {
         "slack_name": slack_name, 
         "current_day": datetime.today().strftime("%A"), 
-        "utc_time": datetime.utcnow(), 
+        "utc_time": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), 
         "track": track, 
         "github_file_url": "https://github.com/utukJ/hngx-stage-1/blob/main/main.py", 
         "github_repo_url": "https://github.com/utukJ/hngx-stage-1", 
